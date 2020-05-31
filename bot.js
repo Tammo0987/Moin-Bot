@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 client.on('ready', () => {
-    client.user.setStatus('King');
+    client.user.setActivity('King');
     console.log('Moin Bot ist online!');
 });
 

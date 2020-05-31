@@ -31,6 +31,11 @@ client.on('message', message => {
             message.member.roles.add(devRole);
         }
     }
+
+    if (message.content === 'moin' || message.content === 'Moin') {
+        message.channel.send('Moin');
+    }
+
 });
 
 client.login(process.env.TOKEN);

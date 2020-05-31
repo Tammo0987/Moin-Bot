@@ -32,7 +32,11 @@ client.on('message', message => {
         }
     }
 
-    if ((message.content === 'moin' || message.content === 'Moin') && message.author.name !== 'Moin-Bot') {
+    if (message.content === 'moin' || message.content === 'Moin') {
+        if (message.author.bot) {
+            return;
+        }
+
         message.channel.send('Moin');
     }
 

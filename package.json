@@ -1,0 +1,13 @@
+{
+    "name": "moin-bot",
+    "version": "1.0.0",
+    "description": "This bot is for the tammo0987 community discord",
+    "main": "bot.js",
+    "scripts": {
+        "start": "node bot.js"
+    },
+    "author": "Tammo0987",
+    "dependencies": {
+        "discord.js": "^12.2.0"
+    }
+}

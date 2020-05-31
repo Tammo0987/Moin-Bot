@@ -40,6 +40,14 @@ client.on('message', message => {
         message.channel.send('Moin');
     }
 
+    if (message.content === 'king' || message.content === 'King') {
+        if (message.author.bot) {
+            return;
+        }
+
+        message.channel.send('Spiegel');
+    }
+
 });
 
 client.login(process.env.TOKEN);
